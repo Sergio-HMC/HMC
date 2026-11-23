@@ -1,18 +1,3 @@
-export const metadata={title:"Home Market Consulting",description:"Invierte en propiedades en España — HMC gestiona todo el proceso."};
-import "../styles/globals.css"; import type { ReactNode } from "react"; import Navbar from "@/components/Navbar"; import Footer from "@/components/Footer";
-export default function RootLayout({children}:{children:ReactNode}){
-  return(<html lang="es"><head>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
-  
-    {/* Google Translate */}
-    <script dangerouslySetInnerHTML={{__html:`
-      function googleTranslateElementInit(){
-        new google.translate.TranslateElement({pageLanguage:'es', includedLanguages:'en,es'}, 'google_translate_element');
-      }
-    `}} />
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  </head><body className="min-h-screen bg-slate-50 font-sans"><Navbar/>{children}<Footer/></body></html>);
-}
+import type {ReactNode} from "react";import type {Metadata} from "next";import Navbar from "@/components/Navbar";import Footer from "@/components/Footer";import "../styles/globals.css";
+export const metadata:Metadata={title:{default:"Home Market Consulting | Inversión inmobiliaria en Valencia",template:"%s | Home Market Consulting"},description:"Te acompañamos a invertir, reformar y gestionar propiedades en Valencia y alrededores, desde España o el extranjero.",icons:{icon:"/Favicon.ico"}};
+export default function Layout({children}:{children:ReactNode}){return <html lang="es"><body><Navbar/>{children}<Footer/></body></html>}

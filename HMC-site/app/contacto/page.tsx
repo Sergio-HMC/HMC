@@ -1,26 +1,2 @@
-import { MessageCircle, Phone, Calendar, Mail } from "lucide-react";
-import { Links } from "@/data/links";
-export default function Contacto(){
-  return(<main className="bg-white">
-    <section className="py-14 md:py-20 bg-white"><div className="container-lg">
-      <h1>Contáctanos</h1>
-      <p className="mt-2 text-slate-700">Nos encantaría poder conversar contigo</p>
-      <div className="grid md:grid-cols-4 gap-4 mt-6">
-        <a href={Links.whatsapp} target="_blank" className="card p-6 text-center">Contáctanos en WhatsApp</a>
-        <a href={Links.phone} className="card p-6 text-center">Llámanos en España al<br/>+34 695 980 853</a>
-        <a href={Links.calendly} target="_blank" className="card p-6 text-center">Agenda aquí tu reunión</a>
-        <a href={Links.email} className="card p-6 text-center">Escríbenos a contacto@homemarketconsulting.com</a>
-      </div>
-      <div className="mt-10 card p-6">
-        <p className="mb-4">También puedes escribirnos en nuestro formulario para que te contactemos sobre inversiones en España:</p>
-        <div className="grid md:grid-cols-2 gap-4">
-          <input className="border rounded-xl p-3" placeholder="Nombre *"/>
-          <input className="border rounded-xl p-3" placeholder="Email *"/>
-          <input className="border rounded-xl p-3 md:col-span-2" placeholder="Asunto"/>
-          <textarea className="border rounded-xl p-3 md:col-span-2" rows={5} placeholder="Mensaje"></textarea>
-        </div>
-        <button className="btn btn-primary mt-4">Enviar</button>
-      </div>
-    </div></section>
-  </main>);
-}
+import {Links} from "@/data/links";import {Mail,Phone,MessageCircle,CalendarDays,ArrowUpRight} from "lucide-react";
+export const metadata={title:"Contacto"};export default function Contacto(){return <main><section className="page-hero compact"><div className="shell"><div className="eyebrow light">ESTAMOS PARA AYUDARTE</div><h1>Empecemos<br/><em>una conversación.</em></h1><p>Cuéntanos tu idea de inversión o tu proyecto en España. Estaremos encantados de escucharte.</p></div></section><section className="section"><div className="shell contact-grid"><div><div className="eyebrow">CONTACTO DIRECTO</div><h2>Elige cómo<br/>prefieres hablar.</h2><p className="body-copy">Puedes contactarnos directamente por cualquiera de estos canales. No necesitas completar formularios.</p></div><div className="contact-options"><a href={Links.whatsapp} target="_blank" rel="noopener noreferrer"><MessageCircle/><span><strong>WhatsApp</strong><small>Escríbenos directamente</small></span><ArrowUpRight/></a><a href={Links.email}><Mail/><span><strong>Correo electrónico</strong><small>contacto@homemarketconsulting.com</small></span><ArrowUpRight/></a><a href={Links.phone}><Phone/><span><strong>Teléfono</strong><small>+34 695 980 853</small></span><ArrowUpRight/></a><a href={Links.calendly} target="_blank" rel="noopener noreferrer"><CalendarDays/><span><strong>Agendar reunión</strong><small>Reserva un espacio para conversar</small></span><ArrowUpRight/></a></div></div></section></main>}

@@ -5,7 +5,7 @@ export const Links = {
   email: "mailto:contacto@homemarketconsulting.com",
   instagram: "https://www.instagram.com/homemarketconsulting",
   facebook: "https://www.facebook.com/HomeMarketConsulting",
-  linkedin: "https://www.linkedin.com/company/86227608/admin/dashboard/",
+  linkedin: "https://www.linkedin.com/company/86227608/",
   es: "/",
   en: "/en"
 };
