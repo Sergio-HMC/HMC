@@ -3,7 +3,7 @@ export default function InversionInmobiliaria(){
   return(<main className="bg-white">
     <section className="py-14 md:py-20 bg-white"><div className="container-lg">
       <h1>Invierte en propiedades en España y nosotros hacemos todo por ti!</h1>
-      <p className="mt-2 text-slate-700">Con nuestros servicios podrás acceder a:</p>
+      <p className="mt-2 text-slate-700">Con nuestros servicios podrás acceder a:</p><div className="mt-6 mb-6 overflow-hidden rounded-2xl"><Image src="/images/villa-mediterranea.jpg" alt="Inversión en propiedades en España" width={1600} height={500} className="w-full h-auto"/></div>
       <div className="grid md:grid-cols-2 gap-6 mt-6 bg-brand-steel/10 p-6 rounded-2xl">
         <div className="card p-6">
           <h3>Asesoramos y gestionamos tu compra de propiedad en España</h3>
@@ -22,8 +22,8 @@ export default function InversionInmobiliaria(){
         <Image src="/images/inv-3.jpg" alt="Foto inversión 3" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
         <Image src="/images/inv-4.jpg" alt="Foto inversión 4" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
         <div className="card p-6">
-          <h3>Gestionamos tu postulación a visa de inversionista</h3>
-          <p className="mt-2 text-slate-700">Un equipo de abogados especialistas te asesorará para aprovechar tu inversión en propiedades, gestionando la presentación de antecedentes de ésta para la obtención de la visa de inversionista que te permite residir en España.</p>
+          <h3>Orientación sobre residencia en España</h3>
+          <p className="mt-2 text-slate-700">Te orientamos para consultar con profesionales especializados las alternativas de residencia vigentes según tu situación. La antigua Golden Visa ya no admite nuevas solicitudes.</p>
         </div>
         <div className="card p-6 md:col-span-2">
           <h3>Obtenemos tu cuenta corriente en Banco Español</h3>
@@ -31,12 +31,7 @@ export default function InversionInmobiliaria(){
         </div>
         <Image src="/images/inv-5.jpg" alt="Foto inversión 5" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto md:col-span-2"/>
       </div>
-      <div className="mt-10 card p-6">
-        <h3>¿Quieres que te contactemos para conversar sobre posibilidades de visa de residencia e inversiones en España?</h3>
-        <p className="text-sm text-slate-600 mt-2">Déjanos tu teléfono y te llamaremos*</p>
-        <div className="mt-3"><input className="w-full border rounded-xl p-3" placeholder="Formato:+569 XXX XXXX"/></div>
-        <button className="btn btn-primary mt-3">Quiero que me llamen</button>
-      </div>
+      <div className="mt-10 card p-6"><h3>¿Quieres conversar sobre una inversión en España?</h3><p className="mt-2 text-slate-700">Cuéntanos tu proyecto y coordinamos una conversación.</p><a href="/contacto" className="btn btn-primary mt-3 inline-block">Contactar con Home Market</a></div>
     </div></section>
   </main>);
 }

@@ -3,8 +3,8 @@ export default function Proyectos(){
   return(<main className="bg-white">
     <section className="py-14 md:py-20 bg-white"><div className="container-lg">
       <h1>Proyectos</h1>
-      <p className="text-slate-600 mt-2">Algunos de los proyectos que hemos realizado</p>
-      <h2 className="mt-8 text-center">Reforma Integral de Departamento en Quart de Poblet, Valencia.</h2>
+      <p className="text-slate-600 mt-2">Ejemplos visuales del potencial de una reforma</p>
+      <h2 className="mt-8 text-center">Ejemplo ilustrativo de transformación de una vivienda</h2>
       <div className="grid md:grid-cols-2 gap-6 mt-6 items-start">
         <div className="text-center">
           <h3 className="mb-2">Antes</h3>
@@ -17,9 +17,9 @@ export default function Proyectos(){
       </div>
       <div className="mt-6"><Image src="/images/proyectos-thumbs.jpg" alt="Thumbnails" width={1600} height={200} className="rounded-xl border border-slate-200 w-full h-auto"/></div>
       <div className="mt-8 space-y-4 text-slate-700">
-        <p>Se realizó una reforma completa de un departamento ubicado a 10 minutos en metro y auto de Valencia Capital.</p>
-        <p>Los cambios realizados consistieron en: cambiar todas las ventanas por Termopanel de PVC, realizar todas las instalaciones de agua y electricidad desde cero, apertura de living-comedor con cocina, para dejar un espacio integrado. En el suelo se colocó un piso vinílico de ingeniería de alta resistencia.</p>
-        <p>Con esta reforma y con una inversión total inferior a 100.000€, nuestro cliente obtiene una rentabilidad, después de los gastos de administración, de un 8% anual.</p>
+        <p>Las siguientes imágenes son representaciones generadas con inteligencia artificial para ilustrar el tipo de transformación que puede conseguirse con una reforma. No corresponden a una obra ejecutada por Home Market Consulting.</p>
+        <p>Una intervención puede contemplar renovación de instalaciones, carpinterías, redistribución de espacios y actualización de acabados, según el estado del inmueble y las autorizaciones aplicables.</p>
+        <p>Cada operación requiere un análisis individual de costes, riesgos y rentabilidad; las imágenes no representan resultados financieros reales.</p>
       </div>
     </div></section>
   </main>);
