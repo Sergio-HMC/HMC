@@ -1,37 +1,15 @@
 import Image from "next/image";
-export default function InversionInmobiliaria(){
-  return(<main className="bg-white">
-    <section className="py-14 md:py-20 bg-white"><div className="container-lg">
-      <h1>Invierte en propiedades en España y nosotros hacemos todo por ti!</h1>
-      <p className="mt-2 text-slate-700">Con nuestros servicios podrás acceder a:</p><div className="mt-6 mb-6 overflow-hidden rounded-2xl"><Image src="/images/villa-mediterranea.jpg" alt="Inversión en propiedades en España" width={1600} height={500} className="w-full h-auto"/></div>
-      <div className="grid md:grid-cols-2 gap-6 mt-6 bg-brand-steel/10 p-6 rounded-2xl">
-        <div className="card p-6">
-          <h3>Asesoramos y gestionamos tu compra de propiedad en España</h3>
-          <p className="mt-2 text-slate-700">Contamos con una completa selección de propiedades para proponerte las opciones de inversión que mejor se ajusten a lo que buscas. Analizamos la propiedad seleccionada revisando sus antecedentes, negociamos, velamos por la seguridad en la compra y realizamos el proceso de registro a tu nombre.</p>
-        </div>
-        <Image src="/images/inv-1.jpg" alt="Foto inversión 1" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
-        <Image src="/images/inv-2.jpg" alt="Foto inversión 2" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
-        <div className="card p-6">
-          <h3>Remodelamos y ambientamos tu propiedad</h3>
-          <p className="mt-2 text-slate-700">Nuestro equipo en Valencia se encarga de proponer el proyecto de remodelación que permita mejorar el valor de venta o arriendo de tu propiedad. Contamos con el equipo de profesionales que ejecutará el proyecto acordado y ambientará tu propiedad para la venta o arriendo.</p>
-        </div>
-        <div className="card p-6">
-          <h3>Administramos tu propiedad en España</h3>
-          <p className="mt-2 text-slate-700">Buscamos posibles compradores o arrendatarios. Te representamos en el contrato de venta o arrendamiento. Gestionamos el seguro de impago y mantenemos la relación con el arrendatario por ti. En caso de propiedades vacacionales, administramos la gestión en las plataformas de reservas, hacemos cargo de todo el proceso, desde la ficha técnica hasta el check out, además de gestionar el aseo y mantención de ésta.</p>
-        </div>
-        <Image src="/images/inv-3.jpg" alt="Foto inversión 3" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
-        <Image src="/images/inv-4.jpg" alt="Foto inversión 4" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto"/>
-        <div className="card p-6">
-          <h3>Orientación sobre residencia en España</h3>
-          <p className="mt-2 text-slate-700">Te orientamos para consultar con profesionales especializados las alternativas de residencia vigentes según tu situación. La antigua Golden Visa ya no admite nuevas solicitudes.</p>
-        </div>
-        <div className="card p-6 md:col-span-2">
-          <h3>Obtenemos tu cuenta corriente en Banco Español</h3>
-          <p className="mt-2 text-slate-700">Te representaremos para que apertures una cuenta corriente en un reconocido banco español, y desde ahí poder gestionar las compras de tus propiedades.</p>
-        </div>
-        <Image src="/images/inv-5.jpg" alt="Foto inversión 5" width={800} height={500} className="rounded-2xl border border-slate-200 w-full h-auto md:col-span-2"/>
-      </div>
-      <div className="mt-10 card p-6"><h3>¿Quieres conversar sobre una inversión en España?</h3><p className="mt-2 text-slate-700">Cuéntanos tu proyecto y coordinamos una conversación.</p><a href="/contacto" className="btn btn-primary mt-3 inline-block">Contactar con Home Market</a></div>
-    </div></section>
-  </main>);
-}
+import Link from "next/link";
+
+const items = [
+  {title:"Asesoramos y gestionamos tu compra de propiedad en España",text:"Contamos con una completa selección de propiedades para proponerte las opciones de inversión que mejor se ajusten a lo que buscas. Analizamos la propiedad seleccionada revisando sus antecedentes, negociamos, velamos por la seguridad en la compra y realizamos el proceso de registro a tu nombre.",image:"/images/inv-1.jpg"},
+  {title:"Remodelamos y ambientamos tu propiedad",text:"Nuestro equipo en Valencia se encarga de proponer el proyecto de remodelación que permita mejorar el valor de venta o arriendo de tu propiedad. Contamos con el equipo de profesionales que ejecutará el proyecto acordado y ambientará tu propiedad para la venta o arriendo.",image:"/images/inv-2.jpg"},
+  {title:"Administramos tu propiedad en España",text:"Buscamos posibles compradores o arrendatarios. Te representamos en el contrato de venta o arrendamiento. Gestionamos el seguro de impago y mantenemos la relación con el arrendatario por ti. En caso de propiedades vacacionales, administramos la gestión en las plataformas de reservas, desde la ficha técnica hasta el check out, además del aseo y mantención.",image:"/images/inv-3.jpg"},
+  {title:"Orientación sobre residencia en España",text:"Te orientamos para consultar con profesionales especializados las alternativas de residencia vigentes según tu situación. La antigua Golden Visa ya no admite nuevas solicitudes.",image:"/images/inv-4.jpg"},
+  {title:"Te ayudamos con la apertura de una cuenta bancaria",text:"Te representaremos para que puedas gestionar la apertura de una cuenta corriente en un banco español y, desde ahí, las compras de tus propiedades.",image:"/images/inv-5.jpg"}
+];
+export default function InversionInmobiliaria(){return <main>
+  <section className="hmc-inner-hero"><Image src="/images/villa-mediterranea.jpg" alt="Vivienda mediterránea en España" fill priority sizes="100vw" style={{objectFit:"cover"}}/><div className="hmc-inner-overlay"/><div className="shell hmc-inner-content"><div className="eyebrow light">INVERSIÓN INMOBILIARIA · ESPAÑA</div><h1>Invierte en España.<br/><em>Nosotros nos ocupamos.</em></h1><p>Te acompañamos en cada etapa: desde encontrar la propiedad hasta transformarla y gestionarla.</p><Link href="/contacto" className="button button-light">Hablemos de tu inversión ↗</Link></div></section>
+  <section className="section" style={{paddingTop:75}}><div className="shell"><div className="eyebrow">CÓMO TE ACOMPAÑAMOS</div><h2 style={{fontSize:"clamp(32px,4vw,52px)",lineHeight:1.2,maxWidth:760,margin:"0 0 40px"}}>Un servicio integral, a tu medida.</h2><div className="hmc-investment-grid">{items.map((item,i)=><article key={item.title} className="hmc-investment-card"><div className="hmc-investment-photo"><Image src={item.image} alt={item.title} fill sizes="(max-width: 750px) 100vw, 50vw" style={{objectFit:"cover"}}/></div><div className="hmc-investment-text"><span className="eyebrow" style={{marginBottom:12}}>0{i+1} / SERVICIOS</span><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div></section>
+  <section className="hmc-inner-cta"><div className="shell"><div className="eyebrow light">EL SIGUIENTE PASO</div><h2>¿Hablamos de tu proyecto?</h2><p>Cuéntanos qué estás buscando y evaluamos juntos cómo podemos ayudarte.</p><Link href="/contacto" className="button button-light">Contactar con Home Market ↗</Link></div></section>
+</main>}

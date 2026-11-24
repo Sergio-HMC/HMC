@@ -1,14 +1,7 @@
 import Image from "next/image";
-export default function Nosotros(){
-  return(<main className="bg-white">
-    <section className="py-14 md:py-20 bg-white"><div className="container-lg">
-      <h1>Nosotros</h1>
-      <div className="mt-6 mb-8 overflow-hidden rounded-2xl"><Image src="/images/nosotros-hero.jpg" alt="Asesoramiento cercano a clientes" width={1400} height={650} className="w-full h-auto object-cover"/></div><div className="mt-6 card p-6">
-        <p className="text-slate-700">Somos una empresa que asesora y acompaña a las personas en su proceso de inversión en España, dando servicio de asistencia y haciendo realidad sus inversiones inmobiliarias.</p>
-        <p className="mt-3 text-slate-700">Representamos los intereses del cliente en cada una de las etapas de la inversión, a través de un proceso transparente, comunicando cada uno de los pasos y etapas de la inversión inmobiliaria.</p>
-        <p className="mt-3 text-slate-700">Facilitamos la gestión del inversionista administrando sus propiedades.</p>
-        <p className="mt-3 text-slate-700">Nos regimos bajo la Ley Orgánica de Protección de Datos de Carácter Personal española, por lo que toda la información será confidencial.</p>
-      </div>
-    </div></section>
-  </main>);
-}
+import Link from "next/link";
+export default function Nosotros(){return <main>
+  <section className="hmc-inner-hero"><Image src="/images/nosotros-hero.jpg" alt="Espacio de trabajo y asesoramiento cercano" fill priority sizes="100vw" style={{objectFit:"cover"}}/><div className="hmc-inner-overlay"/><div className="shell hmc-inner-content"><div className="eyebrow light">HOME MARKET CONSULTING</div><h1>Un equipo local.<br/><em>A tu lado en España.</em></h1><p>Te acompañamos de forma cercana, transparente y práctica en cada decisión inmobiliaria.</p></div></section>
+  <section className="section"><div className="shell"><div className="eyebrow">QUIÉNES SOMOS</div><div className="intro-grid"><h2 style={{fontSize:"clamp(34px,4vw,56px)",lineHeight:1.2,margin:0}}>Invertir con confianza empieza por tener a alguien cerca.</h2><div className="body-copy"><p>Somos una empresa que asesora y acompaña a las personas en su proceso de inversión en España, dando servicio de asistencia y haciendo realidad sus inversiones inmobiliarias.</p><p>Representamos los intereses del cliente en cada una de las etapas de la inversión, a través de un proceso transparente, comunicando cada uno de los pasos y etapas de la inversión inmobiliaria.</p><p>Facilitamos la gestión del inversionista administrando sus propiedades.</p><p>Tratamos la información de nuestros clientes de forma confidencial y conforme a la normativa de protección de datos aplicable.</p></div></div></div></section>
+  <section className="hmc-inner-cta"><div className="shell"><div className="eyebrow light">CONVERSEMOS</div><h2>Tu proyecto merece atención personal.</h2><p>Cuéntanos qué tienes en mente. Estamos en Valencia para ayudarte.</p><Link href="/contacto" className="button button-light">Hablemos ↗</Link></div></section>
+</main>}
