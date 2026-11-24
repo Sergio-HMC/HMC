@@ -19,7 +19,12 @@ export async function POST(request: NextRequest) {
     if (!name || !EMAIL_PATTERN.test(email) || message.length < 5 || message.length > 5000) return NextResponse.json({ error: "Revisa los campos obligatorios" }, { status: 400 });
     if ([body.name, body.email, body.phone, body.service, body.message].some((v) => v !== undefined && typeof v !== "string")) return NextResponse.json({ error: "Datos incorrectos" }, { status: 400 });
 
-    const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN, GOOGLE_SENDER_EMAIL } = process.env;
+    const {
+  GMAIL_CLIENT_ID: GOOGLE_CLIENT_ID,
+  GMAIL_CLIENT_SECRET: GOOGLE_CLIENT_SECRET,
+  GMAIL_REFRESH_TOKEN: GOOGLE_REFRESH_TOKEN,
+  GMAIL_USER: GOOGLE_SENDER_EMAIL,
+} = process.env;
     if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET || !GOOGLE_REFRESH_TOKEN || !GOOGLE_SENDER_EMAIL) {
       console.error("HMC contact: faltan variables de Gmail API");
       return NextResponse.json({ error: "Servicio no configurado" }, { status: 503 });
