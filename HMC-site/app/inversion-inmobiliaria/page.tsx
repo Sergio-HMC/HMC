@@ -1,3 +1,4 @@
+export const metadata = {"title": "Servicios de inversión inmobiliaria", "description": "Acompañamiento en compra, reforma y gestión de inmuebles en Valencia.", "alternates": {"canonical": "/inversion-inmobiliaria", "languages": {"es": "/inversion-inmobiliaria", "en": "/en/investment", "x-default": "/inversion-inmobiliaria"}}, "openGraph": {"title": "Servicios de inversión inmobiliaria", "description": "Acompañamiento en compra, reforma y gestión de inmuebles en Valencia.", "url": "/inversion-inmobiliaria", "locale": "es_ES", "type": "website", "images": ["/images/home-hero.jpg"]}};
 import Image from "next/image";
 import Link from "next/link";
 

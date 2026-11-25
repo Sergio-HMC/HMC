@@ -1,3 +1,4 @@
+export const metadata = {"title": "Nosotros", "description": "Conoce el enfoque de acompañamiento inmobiliario local de Home Market Consulting.", "alternates": {"canonical": "/nosotros", "languages": {"es": "/nosotros", "en": "/en/about", "x-default": "/nosotros"}}, "openGraph": {"title": "Nosotros", "description": "Conoce el enfoque de acompañamiento inmobiliario local de Home Market Consulting.", "url": "/nosotros", "locale": "es_ES", "type": "website", "images": ["/images/home-hero.jpg"]}};
 import Image from "next/image";
 import Link from "next/link";
 export default function Nosotros(){return <main>
